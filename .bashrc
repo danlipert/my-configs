@@ -106,6 +106,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export PS1='\u@\h:\w$(__git_ps1)\$ '
+export PS1='\[\e[38;5;35m\]\u\[\e[38;5;089m\]@\[\e[38;5;090m\]\h:\[\e[38;5;105m\]\w\[\e[38;5;225m\]$(__git_ps1)\[\e[0;0m\]\$ '
 
 export TRAPIT_ENV=test
